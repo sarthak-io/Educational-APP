@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".DoubtFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textSize="28dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_layout" />
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Welcome to Sirjii Classes\n Type Your Doubts"
+            android:textSize="28dp" />
+
+        <RelativeLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:padding="8dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/searchbarchatgpt"
+                    android:layout_width="280dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    app:cardBackgroundColor="#1D1D1D"
+                    app:cardCornerRadius="25dp">
+
+
+                    <ImageView
+                        android:id="@+id/send_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"
+                        android:src="@drawable/baseline_send_24" />
+
+                    <EditText
+                        android:id="@+id/message_edit_text"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_bottom_navigation"
+                        android:ems="10"
+                        android:hint="Send a message"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="12dp"
+                        android:textColor="#FAF8F8"
+                        android:textColorHint="#F8F5F5"
+                        android:textSize="20sp" />
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/backtomain"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:src="@drawable/logout" />
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

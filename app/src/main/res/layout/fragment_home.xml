@@ -1,0 +1,481 @@
+<!-- res/layout/your_layout.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".HomeFragment"
+    android:id="@+id/homefrag">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.78">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/attendancephysicscardhome"
+                    android:layout_width="340dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="#69C6D2"
+                    app:cardCornerRadius="25dp">
+
+                    <TextView
+                        android:id="@+id/attendancephysicscardmaintext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Total attendance in math is " />
+
+                    <Button
+                        android:id="@+id/attendancemathscardchatbtn"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="45dp"
+                        android:backgroundTint="#1D1D1D"
+                        android:gravity="center"
+                        android:text="Chat section"
+                        app:cornerRadius="12dp" />
+
+                    <TextView
+                        android:id="@+id/attendancephysicscarddec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="&quot;Nature is written in mathematical language.&quot;"
+                        android:textColor="#FAF8F8"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/attendancephysicscardtittle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Mathematics"
+                        android:textColor="#594F4F"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/attendancechemistrycard"
+                    android:layout_width="340dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardBackgroundColor="#EFB7B7"
+                    app:cardCornerRadius="25dp">
+
+                    <TextView
+                        android:id="@+id/attendancechemistrycardMaintext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Total attendance in  chemistry is " />
+
+                    <Button
+                        android:id="@+id/attendancechemistrycardchatbtn"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="38dp"
+                        android:backgroundTint="#1D1D1D"
+                        android:gravity="center"
+                        android:text="Chat "
+                        app:cornerRadius="12dp" />
+
+                    <TextView
+                        android:id="@+id/attendancechemistrycarddec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="&quot;Coaching is unlocking a person's potential to maximize their growth.&quot;"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/attendancechemistrycardtittle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Chemistry"
+                        android:textColor="#594F4F"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/attendancemathscard"
+                    android:layout_width="340dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="#73CF77"
+                    app:cardCornerRadius="25dp">
+
+                    <TextView
+                        android:id="@+id/attendancemathscardmaintext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Total attendance in physics is " />
+
+                    <Button
+                        android:id="@+id/attendancephysicscardchatbtn"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="45dp"
+                        android:backgroundTint="#1D1D1D"
+                        android:gravity="center"
+                        android:text="Chat "
+                        app:cornerRadius="12dp" />
+
+                    <TextView
+                        android:id="@+id/attendancemathscarddec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="&quot;One way to keep momentum going is to have constantly greater goals.&quot;"
+                        android:textColor="#F8F5F5"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tattendancemathscardtittle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Physics"
+                        android:textColor="#594F4F"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Attendance"
+            android:textColor="#1D1D1D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.521" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardmainhome"
+            app:layout_constraintVertical_bias="0.23000002">
+
+            <LinearLayout
+                android:id="@+id/scrollViewLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lecturesphysicscard"
+                    android:layout_width="340dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="#F2F4EF"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/lecturesphysicscardimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="2"
+                        android:scaleY="2"
+                        android:src="@drawable/blurimagechemistry" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Running...."
+                        android:textColor="#F4F2F2"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lecturesphysicscardtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:text="Electrostatics"
+                        android:textColor="#F6F3F3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lectureschemistrycard"
+                    android:layout_width="340dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="#F2F4EF"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/lectureschemistrycardimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="2"
+                        android:scaleY="2"
+                        android:src="@drawable/blurimagenew" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Running...."
+                        android:textColor="#F4F2F2"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lectureschemistrycardtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:text="Solution
+"
+                        android:textColor="#F0F4F4"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lecturesmathsscard"
+                    android:layout_width="340dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="#F2F4EF"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/lecturesmathsscardimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="2"
+                        android:scaleY="2"
+                        android:src="@drawable/mathsimagesnew" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Running...."
+                        android:textColor="#F4F2F2"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lecturesmathsscardtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:text="Matrices"
+                        android:textColor="#F6F3F3"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardmainhome"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@drawable/bottom_rounded_card_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/mobileused"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="25%"
+                android:textColor="#FBFAFA"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.711"
+                app:layout_constraintStart_toEndOf="@+id/memoriized"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.596" />
+
+            <TextView
+                android:id="@+id/weak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_w"
+                android:textColor="#F66D42"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memoriized"
+                app:layout_constraintVertical_bias="0.111" />
+
+            <TextView
+                android:id="@+id/weak2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/of_30_w"
+                android:textColor="#FFFEFD"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/weak"
+                app:layout_constraintTop_toBottomOf="@+id/memoriized"
+                app:layout_constraintVertical_bias="0.111" />
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/svgrepo_iconcarrier__3_"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.93"
+                app:layout_constraintStart_toEndOf="@+id/userNameTextHome"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.172" />
+
+            <TextView
+                android:id="@+id/memoriized"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Performance"
+                android:textColor="#FAF9F9"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.072"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userNameTextHome"
+                app:layout_constraintVertical_bias="0.223" />
+
+            <TextView
+                android:id="@+id/shortdescriptionTextHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_w_of_20_w"
+                android:textColor="#78909C"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/memoriized"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.054"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userNameTextHome"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/userNameTextHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/hi_sarthak"
+                android:textColor="#FAF9F9"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.148" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

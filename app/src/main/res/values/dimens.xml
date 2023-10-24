@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- to place thumb under the track use negative padding -->
+    <dimen name="switch_padding">-1dp</dimen>
+    <dimen name="switch_radius">18dp</dimen>
+    <dimen name="switch_size">18dp</dimen>
+    <dimen name="switch_margin">5dp</dimen>
+
+</resources>

@@ -1,0 +1,22 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/msgcard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="8dp"
+    android:padding="8dp"
+    app:cardBackgroundColor="#F66D42"
+    app:cardCornerRadius="5dp">
+
+    <TextView
+        android:id="@+id/textMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="Your message here"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/loginbgdowncard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/backtohome"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EBE3E3"
+            android:text="Back to home"
+            android:textColor="#1D1D1D"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutaddstudent"
+        app:layout_constraintVertical_bias="0.016">
+
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/subjectmulti"
+            android:layout_width="320dp"
+            android:layout_height="62dp"
+            android:background="@drawable/input"
+            android:gravity="center"
+            android:hint="Enter Subject"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/userinputTextaddstudent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameinputTextaddstudent" />
+
+        <EditText
+            android:id="@+id/nameinputTextaddstudent"
+            android:layout_width="320dp"
+            android:layout_height="62dp"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Student name"
+            android:inputType="text"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/paaswordinputTextaddstudent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.208" />
+
+        <Button
+            android:id="@+id/addstudentbtn"
+            android:layout_width="320dp"
+            android:layout_height="62dp"
+            android:backgroundTint="#F66D42"
+            android:shadowColor="#827E7E"
+            android:text="Add Student"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paaswordinputTextaddstudent" />
+
+
+        <EditText
+            android:id="@+id/userinputTextaddstudent"
+            android:layout_width="320dp"
+            android:layout_height="62dp"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Set Username"
+            android:inputType="text"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/paaswordinputTextaddstudent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameinputTextaddstudent"
+            app:layout_constraintVertical_bias="0.815" />
+
+        <EditText
+            android:id="@+id/paaswordinputTextaddstudent"
+            android:layout_width="320dp"
+            android:layout_height="62dp"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Set Password"
+            android:inputType="text"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.742" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutaddstudent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bottom_rounded_card_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/titleaddstudents"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Add Students"
+            android:textColor="#FFC107"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

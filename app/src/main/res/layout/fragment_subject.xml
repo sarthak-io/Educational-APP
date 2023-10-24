@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F66D42"
+    tools:context=".SubjectFragment"
+    android:id="@+id/subjectfrag">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="321dp"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.27"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/physicscard"
+                    android:layout_width="274dp"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="#1D1D1D"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/physicscardimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="2"
+                        android:scaleY="2"
+                        android:src="@drawable/group_62" />
+
+                    <TextView
+                        android:id="@+id/physicscardtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:text="Physics"
+                        android:textColor="#FFFFFF"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+                <FrameLayout
+                    android:layout_width="321dp"
+                    android:layout_height="120dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/crosphysicscardublicate"
+                        android:layout_width="321dp"
+                        android:layout_height="120dp"
+                        app:cardBackgroundColor="#FFBB33"
+                        app:cardCornerRadius="20dp">
+
+                        <Button
+                            android:id="@+id/phsyicschat1"
+                            android:layout_width="150dp"
+                            android:layout_height="63dp"
+                            android:layout_gravity="center|center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="#FFFFFF"
+
+                            android:text="Chat"
+                            android:textColor="#1D1D1D"
+                            android:textSize="18sp"
+                            app:cornerRadius="20dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/crosphysicscard"
+                        android:layout_width="321dp"
+                        android:layout_height="120dp"
+                        app:cardBackgroundColor="#FFBB33"
+                        app:cardCornerRadius="20dp">
+
+                        <Button
+                            android:id="@+id/phsyicsattendancebtn"
+                            android:layout_width="165dp"
+                            android:layout_height="53dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:backgroundTint="#FFFFFF"
+                            android:drawableRight="@drawable/attendanceicon"
+                            android:text="Attendance"
+                            android:textColor="#1D1D1D"
+                            android:textSize="16sp"
+                            app:cornerRadius="20dp" />
+
+                        <Button
+                            android:id="@+id/phsyicschat"
+                            android:layout_width="122dp"
+                            android:layout_height="53dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="#FFFFFF"
+                            android:drawableRight="@drawable/chaticon"
+                            android:text="Chat"
+                            android:textColor="#1D1D1D"
+                            android:textSize="16sp"
+                            app:cornerRadius="20dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tipscard"
+            android:layout_width="336dp"
+            android:layout_height="48dp"
+            app:cardBackgroundColor="#FFD4D5"
+            app:cardCornerRadius="20dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ideaicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/vector__12_" />
+
+            <TextView
+                android:id="@+id/tipstext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="Make Short notes for revision Fast!"
+                android:textColor="#1D1D1D"
+                android:textSize="17sp" />
+        </androidx.cardview.widget.CardView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
+        android:layout_width="321dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mathscard"
+            android:layout_width="274dp"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="#1D1D1D"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.281"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7">
+
+            <ImageView
+                android:id="@+id/mathcardimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/group_61" />
+
+            <TextView
+                android:id="@+id/mathcardtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:text="Mathematics"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <FrameLayout
+            android:layout_width="321dp"
+            android:layout_height="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crosmathscarddubli"
+                android:layout_width="321dp"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="#FFBB33"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.42"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.7">
+
+
+                <Button
+                    android:id="@+id/mathschatbtn1"
+                    android:layout_width="150dp"
+                    android:layout_height="63dp"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#FFFFFF"
+
+                    android:text="Chat"
+                    android:textColor="#1D1D1D"
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crosmathscard"
+                android:layout_width="321dp"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="#FFBB33"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.42"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.7">
+
+                <Button
+                    android:id="@+id/mathsattendancebtn"
+                    android:layout_width="165dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableRight="@drawable/attendanceicon"
+                    android:text="Attendance"
+                    android:textColor="#1D1D1D"
+                    android:textSize="16sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/mathschatbtn"
+                    android:layout_width="122dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableRight="@drawable/chaticon"
+                    android:text="Chat"
+                    android:textColor="#1D1D1D"
+                    android:textSize="16sp"
+                    app:cornerRadius="20dp" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="321dp"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.51"
+            android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/chemistrycard"
+                android:layout_width="274dp"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="#1D1D1D"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.281"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.46">
+
+                <ImageView
+                    android:id="@+id/chemistrycardimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    android:src="@drawable/group_63" />
+
+                <TextView
+                    android:id="@+id/chemistrycardtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:text="Chemistry"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+            <FrameLayout
+                android:layout_width="321dp"
+                android:layout_height="120dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/croschemistrycarddubli"
+                    android:layout_width="321dp"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="#FFBB33"
+                    app:cardCornerRadius="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.42"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.46">
+
+
+                    <Button
+                        android:id="@+id/chemistrychatbtn1"
+                        android:layout_width="150dp"
+                        android:layout_height="63dp"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="#FFFFFF"
+
+                        android:text="Chat"
+                        android:textColor="#1D1D1D"
+                        android:textSize="18sp"
+                        app:cornerRadius="20dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                android:id="@+id/croschemistrycard"
+                android:layout_width="321dp"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="#FFBB33"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.42"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.46">
+
+                <Button
+                    android:id="@+id/chemsitryattendancebtn"
+                    android:layout_width="165dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableRight="@drawable/attendanceicon"
+                    android:text="Attendance"
+                    android:textColor="#1D1D1D"
+                    android:textSize="16sp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/chemistrychatbtn"
+                    android:layout_width="122dp"
+                    android:layout_height="53dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableRight="@drawable/chaticon"
+                    android:text="Chat"
+                    android:textColor="#1D1D1D"
+                    android:textSize="16sp"
+                    app:cornerRadius="20dp" />
+            </androidx.cardview.widget.CardView>
+
+            </FrameLayout>
+        </LinearLayout></HorizontalScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,5 @@
+<!-- res/drawable/bg_bottom_navigation.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#1D1D1D" />
+    <corners android:radius="21dp" /> <!-- Set your desired corner radius here -->
+</shape>
